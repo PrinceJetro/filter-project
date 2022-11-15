@@ -46,3 +46,26 @@ d =`<img src="donut.jfif"/>,<img src="donut1.jfif">,<img src="donut2.jfif">,<img
 e =`<img src="eggroll.jfif"/>,<img src="eggroll1.jfif">,<img src="eggroll2.jfif">,<img src="eggroll3.jfif">`;
 
 m = `<img src="meatpie.jfif"/>,<img src="meatpie1.jfif">,<img src="meatpie2.jfif">,<img src="meatpie3.jfif">`;
+
+getValue = () => {
+    f= document.getElementById("search").value;
+    console.log(f);
+    if(f == "buns"){
+        buns()
+    }
+    else if(f== "doughnuts" || f== "doughnut"){
+        doughnuts()
+    }
+    else if(f== "meatpie" || f== "meatpies"){
+        meatpies()
+    }
+    else if(f== "eggroll" || f== "eggrolls" || f== "Eggroll"){
+        eggrolls()
+    }
+    else if(f== "all"){
+        norm()
+    }
+    else{
+        document.getElementById("head").innerHTML= "Sorry, invalid request"
+    }
+}

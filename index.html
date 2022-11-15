@@ -13,12 +13,24 @@
 </head>
 <body>
     <div class="container-fluid">
+        <div class="col-12"><h1><i>Welcome to Jetro's Bakery</i></h1></div>
+
+        <div class="col-12"><h2>Get your baked products here at a cheap price</h2></div>
+
+
+
         <div class="col-sm-12">
             <button onclick="norm()">All</button>
             <button onclick="buns()">Buns</button>
             <button onclick="doughnuts()">Doughnuts</button>
             <button onclick="eggrolls()">Egg Roll</button>
             <button onclick="meatpies()">Meat Pie</button>
+
+            <form action="#">
+                <input type="text" id="search">
+                <input type="submit" onclick="getValue()">
+            </form>
+
         </div><br>
         <h1 id="head"><i></i></h1>
         <div class="col-12" id="main">
